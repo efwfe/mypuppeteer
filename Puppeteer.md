@@ -32,3 +32,8 @@ const windowHandle = await page.evaluateHandle(() => window);
 - requestfinished 请求体下载完成，而且请求断开
 
   如果请求再某些非erquetfinished 地方失败，触发requestfaided 触发
+
+# CDPSession
+- CDPSession实例用于讨论原始Chrome Devtools协议
+- 可以使用session.send方法调用协议
+- 使用session.on 注册协议
