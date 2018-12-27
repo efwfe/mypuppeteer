@@ -9,6 +9,7 @@ const frame = page.frames().find(frame => frame.name() === 'myframe');
 const text = await frame.$eval('.selector', element => element.textContent);
 console.log(text);
   ```
+
 # ExecutionContext
 - js解析上下文，一个页面可能有多个执行上下文
 - frame触发dom的时候创建默认执行上下文，通过frame.executionContext()方法返回上下文
