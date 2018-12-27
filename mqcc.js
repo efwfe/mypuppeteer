@@ -28,5 +28,8 @@ async function run(){
         });
 
    console.log(await results);
+   await page.close();
+   await browser.close();
+
 }
 run()
