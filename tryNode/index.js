@@ -1,3 +1,3 @@
 var server = require("./tryNode/server");
-
-server.start();
+var router = require("./tryNode/router");
+server.start(router.route);
