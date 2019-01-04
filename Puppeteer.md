@@ -1,3 +1,8 @@
+# js
+```
+在JavaScript中，对象就是一个键/值对的集合 -- 你可以把JavaScript的对象想象成一个键为字符串类型的字典。
+```
+
 # frame
 - frameattached，附加到页面时触发，只能触发一次
 - framenavigated 当提交导航栏到不同的url中触发
@@ -8,7 +13,7 @@
 const frame = page.frames().find(frame => frame.name() === 'myframe');
 const text = await frame.$eval('.selector', element => element.textContent);
 console.log(text);
-  ```
+```
 
 # ExecutionContext
 - js解析上下文，一个页面可能有多个执行上下文
